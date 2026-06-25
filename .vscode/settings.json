@@ -1,0 +1,16 @@
+{
+  "C_Cpp.default.compilerPath": "${env:HOME}/.local/share/pebble-sdk/SDKs/current/toolchain/arm-none-eabi/bin/arm-none-eabi-gcc",
+  "C_Cpp.default.cStandard": "c11",
+  "C_Cpp.default.intelliSenseMode": "gcc-arm",
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/src/c",
+    "${workspaceFolder}/build/include",
+    "${env:HOME}/.local/share/pebble-sdk/SDKs/current/sdk-core/pebble/emery/include",
+    "${env:HOME}/.local/share/pebble-sdk/SDKs/current/sdk-core/pebble/common/include"
+  ],
+  "C_Cpp.default.defines": [
+    "PBL_PLATFORM_EMERY",
+    "PBL_COLOR",
+    "PBL_RECT"
+  ]
+}
