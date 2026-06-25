@@ -1,0 +1,16 @@
+{
+  "uuid": "b7d7d625-13f3-48f3-a483-d6d7b7d4dd7d",
+  "shortName": "Headroom",
+  "longName": "Headroom Coach",
+  "companyName": "Headroom Coach",
+  "versionLabel": "1.0",
+  "sdkVersion": "3",
+  "targetPlatforms": ["aplite", "basalt", "chalk", "emery"],
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

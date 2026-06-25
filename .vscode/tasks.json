@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Pebble: Build",
+      "type": "shell",
+      "command": "PATH=$HOME/.local/bin:$PATH pebble build",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Pebble: Install Emulator (Time 2)",
+      "type": "shell",
+      "command": "PATH=$HOME/.local/bin:$PATH pebble install --emulator emery",
+      "dependsOn": "Pebble: Build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Pebble: Install Phone",
+      "type": "shell",
+      "command": "PATH=$HOME/.local/bin:$PATH pebble install --phone ${input:phoneIp}",
+      "dependsOn": "Pebble: Build",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "phoneIp",
+      "type": "promptString",
+      "description": "Phone IP from Pebble app Developer Connection"
+    }
+  ]
+}
