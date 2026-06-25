@@ -35,7 +35,7 @@ From this project folder, run:
 pebble build
 ```
 
-The build creates a `.pbw` package in the `build/` folder.
+The build creates `build/Headroom.pbw`, which is the file you install on a watch or emulator.
 
 ### 3. Test in an emulator
 
